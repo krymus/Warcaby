@@ -235,7 +235,6 @@ public class Rules {
         return null;
     }
 
-
     public boolean didWhiteLost(Board board) {
         for (int i = 0; i < board.sizeY; i++) {
             for (int j = 0; j < board.sizeX; j++) {
