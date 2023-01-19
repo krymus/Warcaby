@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Rules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Model/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,18 +70,29 @@
       <recent name="Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
-    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Widok.Client" />
       <module name="Warcaby" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Model.*" />
+          <option name="PATTERN" value="Widok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.BoardTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Widok.Server" />
+      <module name="Warcaby" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Widok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,22 +108,6 @@
       <option name="PACKAGE_NAME" value="Model" />
       <option name="MAIN_CLASS_NAME" value="Model.GameTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.gameState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Warcaby" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.GameTest" />
-      <option name="METHOD_NAME" value="gameState" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,13 +143,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="JUnit.GameTest" />
+      <item itemvalue="JUnit.GameTest.moveInInts" />
+      <item itemvalue="JUnit.RulesTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.GameTest.moveInInts" />
         <item itemvalue="JUnit.RulesTest" />
-        <item itemvalue="JUnit.BoardTest" />
-        <item itemvalue="JUnit.GameTest.gameState" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="9618000" />
+      <workItem from="1674130891932" duration="11522000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674140220086</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Checkers attacking fixed. Class Game covered with tests.">
+      <created>1674142003181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674142003181</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,22 +247,11 @@
     <MESSAGE value="Adding Rules class" />
     <MESSAGE value="84% of Rules class covered with Tests" />
     <MESSAGE value="Adding Game class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Game class" />
+    <MESSAGE value="Checkers attacking fixed. Class Game covered with tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkers attacking fixed. Class Game covered with tests." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegalforCHECKER.ic" NAME="RulesTest.isLegalforCHECKER Coverage Results" MODIFIED="1674138767877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$BoardTest_BoardTest.ic" NAME="BoardTest.BoardTest Coverage Results" MODIFIED="1674135574011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Model.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_KINGcanAttackinOneOfDiagonals.ic" NAME="RulesTest.KINGcanAttackinOneOfDiagonals Coverage Results" MODIFIED="1674138957920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_getFieldOfEnemyPieceOnPath.ic" NAME="RulesTest.getFieldOfEnemyPieceOnPath Coverage Results" MODIFIED="1674139319617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_didBlackLost.ic" NAME="RulesTest.didBlackLost Coverage Results" MODIFIED="1674139259656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegal.ic" NAME="RulesTest.isLegal Coverage Results" MODIFIED="1674138042758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -266,16 +263,31 @@
     <SUITE FILE_PATH="coverage/Warcaby$GameTest_gameState.ic" NAME="GameTest.gameState Coverage Results" MODIFIED="1674140557718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_CHECKERCanAtack.ic" NAME="RulesTest.CHECKERCanAtack Coverage Results" MODIFIED="1674136910005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Model.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest.ic" NAME="RulesTest Coverage Results" MODIFIED="1674137473483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_didWhiteLost.ic" NAME="RulesTest.didWhiteLost Coverage Results" MODIFIED="1674139211901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Warcaby$GameTest_moveInInts.ic" NAME="GameTest.moveInInts Coverage Results" MODIFIED="1674140657739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Warcaby$GameTest_moveInInts.ic" NAME="GameTest.moveInInts Coverage Results" MODIFIED="1674140657739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegalforCHECKER.ic" NAME="RulesTest.isLegalforCHECKER Coverage Results" MODIFIED="1674138767877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$BoardTest_BoardTest.ic" NAME="BoardTest.BoardTest Coverage Results" MODIFIED="1674135574011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_getFieldOfEnemyPieceOnPath.ic" NAME="RulesTest.getFieldOfEnemyPieceOnPath Coverage Results" MODIFIED="1674139319617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_didBlackLost.ic" NAME="RulesTest.didBlackLost Coverage Results" MODIFIED="1674139259656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1674141885745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_CHECKERCanAtack.ic" NAME="RulesTest.CHECKERCanAtack Coverage Results" MODIFIED="1674136910005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_didWhiteLost.ic" NAME="RulesTest.didWhiteLost Coverage Results" MODIFIED="1674139211901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
   </component>
