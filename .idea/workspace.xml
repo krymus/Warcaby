@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Rules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="15473000" />
+      <workItem from="1674130891932" duration="16457000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -231,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674145232225</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Methods and classes are described.">
+      <created>1674148404685</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674148404685</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +272,8 @@
     <MESSAGE value="Checkers attacking fixed. Class Game covered with tests." />
     <MESSAGE value="Setting network" />
     <MESSAGE value="Network set. UI works. Game is entirely playable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Network set. UI works. Game is entirely playable." />
+    <MESSAGE value="Methods and classes are described." />
+    <option name="LAST_COMMIT_MESSAGE" value="Methods and classes are described." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_KINGcanAttackinOneOfDiagonals.ic" NAME="RulesTest.KINGcanAttackinOneOfDiagonals Coverage Results" MODIFIED="1674138957920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
