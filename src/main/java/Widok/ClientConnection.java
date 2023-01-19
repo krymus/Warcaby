@@ -3,7 +3,9 @@ package Widok;
 import java.io.*;
 import java.net.Socket;
 
-
+/**
+ * ClientConnection class is responsible for connection between user and server.
+ */
 public class ClientConnection  {
     private Socket socket;
     private BufferedReader in;
@@ -22,6 +24,9 @@ public class ClientConnection  {
 
 
     public void sendMoves(String move) throws IOException
+    /**
+     * method sends move to server
+     */
     {
         try
         {
@@ -41,6 +46,9 @@ public class ClientConnection  {
     }
 
     public void listenToServer() throws IOException
+    /**
+     * method waits for message from server and delegates it to client.setGameState method
+     */
     {
 
         new Thread(new Runnable() {

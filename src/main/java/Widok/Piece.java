@@ -6,6 +6,9 @@ import javafx.scene.shape.Ellipse;
 
 import static Widok.Client.TILE_SIZE;
 
+/**
+ * class Piece is responsible for graphical representation of pieces
+ */
 public class Piece extends StackPane {
     PieceType type;
     private double oldX, oldY;

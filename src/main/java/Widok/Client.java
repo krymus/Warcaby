@@ -11,7 +11,9 @@ import javafx.scene.Parent;
 
 import java.io.IOException;
 
-
+/**
+ * Client class is responsible for interpreting information from ClientConnection and display them as UI.
+ */
 public class Client extends Application {
 
     public Stage stageHelp;
@@ -49,6 +51,11 @@ public class Client extends Application {
     }
 
     public void setGameState(String gameState)
+    /**
+     * method decodes information about gamestate on server and accordingly changes UI.
+     * First 64 words mean pieces on the board and rest of them is game status.
+     * if game status changes, UI title also changes.
+     */
     {
         Platform.runLater(new Runnable() {
             @Override
@@ -103,8 +110,6 @@ public class Client extends Application {
                     setGameState(gameState);
                 }
 
-
-                //System.out.println(coordinates[64] + " " + coordinates[65] + " " + coordinates[66]);
                 if(!coordinates[65].equals("0")) setGameResult(coordinates[65], coordinates[66]);
                 else if(coordinates[64].equals(coordinates[66])) stageHelp.setTitle("Your turn!");
                 else stageHelp.setTitle("Enemy turn!");

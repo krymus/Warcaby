@@ -1,14 +1,26 @@
 package Model;
 
+/**
+ * Board class represents a chcecker board. It has Fields, width, height and information about status of the game.
+ */
 public class Board {
 
     public Field[][] Fields;
     int sizeX;
     int sizeY;
     boolean A1isWhite;
+    /**
+     * used to set colors of fields. If true, Field[0][0] is white.
+     */
     public boolean whiteTurn;
-    public int gameIsOn; // 0 - game is on 1 - white win 2 - black win
+    /**
+     * if true, it is white players turn now.
+     */
+    public int gameIsOn;
 
+    /**
+     * represents game status. If 0 - game is on, if 1 - white win, if 2 - black win.
+     */
 
     public Board(int sizeX, int sizeY, boolean A1isWhite)
     {
@@ -22,6 +34,13 @@ public class Board {
 
 
     public String gameState()
+    /**
+     * returns coded information about position of pieces on the board, players turn and game status.
+     * First 64 word are field states. If 0 - field is empty, if 1 - there is white chcker on the field,
+     * if 2 - black checker, 3 - white king, 4 - black king.
+     * 65th word is info about players turn: 1 - white's turn, 2 - black's turn.
+     * 66th word is info about game status: 0 - game is on, if 1 - white win, if 2 - black win.
+     */
     {
         String gameState = "";
         for(int i = sizeY -1 ; i >= 0; i--)

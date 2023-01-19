@@ -6,7 +6,10 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-
+/**
+ * Server is responsible for keeping the game playing. It listens for information about clients move
+ * and changes game state if move was legal.
+ */
 public class Server {
 
     private ServerSocket serverSocket;
@@ -41,8 +44,11 @@ public class Server {
 
         while(game.board.gameIsOn == 0)
         {
+            //getting move
             if(game.board.whiteTurn) move = inW.readLine();
             else move = inB.readLine();
+
+            //making move
             String[] splitMove = move.split(" ");
             int x = Integer.parseInt(splitMove[0]);
             int y = Integer.parseInt(splitMove[1]);
@@ -53,6 +59,8 @@ public class Server {
             if (game.isLegalInString(x, y, x2, y2))
             {
                 game.moveInInts(x, y, x2, y2);
+
+                //broadcasting new game state
                 game.board.displayGameState();
                 broadcastGameState(game.gameState());
             }
@@ -62,62 +70,19 @@ public class Server {
             System.out.println("");
         }
 
+        //if game ends, players need one more broadcast of game state
         broadcastGameState(game.gameState());
 
 
     }
 
 
-    public void listenToWhite()
-    {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try
-                {
-                    while(true)
-                    {
-                        String msg = inW.readLine();
-
-                        //try to update game using msg from white
-                        //if gamestate updated v
-                        //broadcastGameState();
-                    }
-                } catch (IOException e)
-                {
-                    System.err.println("Problem with White's connection...");
-                }
-
-            }
-        }).start();
-    }
-
-    public void listenToBlack()
-    {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try
-                {
-                    while(true)
-                    {
-                        String msg = inB.readLine();
-                        //try to update game using msg from black
-                        //if gamestate updated v
-
-                    }
-                } catch (IOException e)
-                {
-                    System.err.println("Problem with Black's connection...");
-                }
-
-            }
-        }).start();
-    }
-
-
-
     public void broadcastGameState(String gameState) throws IOException
+    /**
+     * broadcasts String gameState to both users. Adds information about
+     * players color on the end of String gameState.
+     * (white player gets 1, black player gets 2)
+     */
     {
         outW.write(gameState + "1 ");
         outW.newLine();
@@ -134,17 +99,5 @@ public class Server {
         ServerSocket serverSocket = new ServerSocket(1234);
         Server server = new Server(serverSocket);
         server.startTheGame();
-
-       /* while(true)
-        {
-            Scanner scanner = new Scanner(System.in);
-            String move = scanner.nextLine();
-            String[] splitMove = move.split(" ");
-            int x = Integer.parseInt(splitMove[0]);
-            int y = Integer.parseInt(splitMove[1]);
-            int x2 = Integer.parseInt(splitMove[2]);
-            int y2 = Integer.parseInt(splitMove[3]);
-        } */
-
     }
 }

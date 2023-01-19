@@ -1,9 +1,16 @@
 package Model;
 
+/**
+ * Rules class is responsible for checking if the move is Legit.
+ */
 public class Rules {
 
 
-    public boolean isLegal(Board board, Field startField, Field endField) {
+    public boolean isLegal(Board board, Field startField, Field endField)
+    /**
+     * main method for checking. It eliminates simplest cases and delegates the checking process to subsequent methods.
+     */
+    {
         if (startField.piece == null) return false;
         if (endField.piece != null) return false;
         if (board.whiteTurn == true && startField.piece.color == Color.BLACK) return false;
@@ -14,6 +21,9 @@ public class Rules {
     }
 
     public boolean isLegalforCHECKER(Board board, Field startField, Field endField)
+    /**
+     * checks if moving from startField to endField is legal if there is a checker on startfield.
+     */
     {
         int d = distance(board, startField, endField);
         if (d == -1) return false;
@@ -33,7 +43,11 @@ public class Rules {
         }
     }
 
-    public boolean isLegalforKING(Board board, Field startField, Field endField) {
+    public boolean isLegalforKING(Board board, Field startField, Field endField)
+    /**
+     * checks if moving from startField to endField is legal if there is a king on startfield.
+     */
+    {
         if (isAttackPossible(board)) {
             if (KINGcanAttack(startField, board)) {
                 if (enemyPiecesOnPath(startField, endField, board) == 1)
@@ -47,7 +61,11 @@ public class Rules {
 
     }
 
-    public boolean isAttackPossible(Board board) {
+    public boolean isAttackPossible(Board board)
+    /**
+     * checks if the player whose turn it is can attack.
+     */
+    {
         for (int i = 0; i < board.sizeY; i++) {
             for (int j = 0; j < board.sizeX; j++) {
                 if (CHECKERCanAtack(board.Fields[j][i], board) || KINGcanAttack(board.Fields[j][i], board)) return true;
@@ -57,6 +75,9 @@ public class Rules {
     }
 
     public boolean CHECKERCanAtack(Field startField, Board board)
+    /**
+     * checks if checker on startField can attack.
+     */
     {
         if (startField.piece == null) return false;
         if (startField.piece.pieceType == PieceType.KING) return false;
@@ -81,7 +102,11 @@ public class Rules {
         else return false;
     }
 
-    public boolean KINGcanAttack(Field startField, Board board) {
+    public boolean KINGcanAttack(Field startField, Board board)
+    /**
+     * checks if king on startField can attack
+     */
+    {
         if (startField.piece == null) return false;
         if (startField.piece.pieceType == PieceType.CHECKER) return false;
         if (board.whiteTurn == true && startField.piece.color == Color.BLACK) return false;
@@ -93,7 +118,11 @@ public class Rules {
         return false;
     }
 
-    public boolean KINGcanAttackinOneOfDiagonals(Field startField, Board board, int diagonalNumber) {
+    public boolean KINGcanAttackinOneOfDiagonals(Field startField, Board board, int diagonalNumber)
+    /**
+     * checks if king on startField can attack in one of four possible directions
+     */
+    {
         int x = -1;
         int y = -1;
 
@@ -152,12 +181,17 @@ public class Rules {
         return false;
     }
 
-    int distance(Board board, Field startField, Field endField) {
+    int distance(Board board, Field startField, Field endField)
+    {
         if (Math.abs(startField.x - endField.x) != Math.abs(startField.y - endField.y)) return -1;
         else return Math.abs(startField.x - endField.x);
     }
 
-    int enemyPiecesOnPath(Field startField, Field endField, Board board) {
+    int enemyPiecesOnPath(Field startField, Field endField, Board board)
+    /**
+     * return number of enemy pieces on the path from startField to endField
+     */
+    {
         if (distance(board, startField, endField) == -1) return -1;
         if (startField == endField) return -1;
         int Xincrementer;
@@ -199,7 +233,11 @@ public class Rules {
         return enemyPiecesFound;
     }
 
-    public Field getFieldOfEnemyPieceOnPath(Field startField, Field endField, Board board) {
+    public Field getFieldOfEnemyPieceOnPath(Field startField, Field endField, Board board)
+    /**
+     * returns field of first enemy piece on path from startField to endField
+     */
+    {
         if (startField == endField) return null;
         int Xincrementer;
         int Yincrementer;
@@ -236,7 +274,11 @@ public class Rules {
         return null;
     }
 
-    public boolean didWhiteLost(Board board) {
+    public boolean didWhiteLost(Board board)
+    /**
+     * checks if white player lost
+     */
+    {
         for (int i = 0; i < board.sizeY; i++) {
             for (int j = 0; j < board.sizeX; j++) {
                 if (board.Fields[j][i].piece != null && board.Fields[j][i].piece.color == Color.WHITE) {
@@ -247,7 +289,11 @@ public class Rules {
         return true;
     }
 
-    public boolean didBlackLost(Board board) {
+    public boolean didBlackLost(Board board)
+    /**
+     * checks if black player lost
+     */
+    {
         for (int i = 0; i < board.sizeY; i++) {
             for (int j = 0; j < board.sizeX; j++) {
                 if (board.Fields[j][i].piece != null && board.Fields[j][i].piece.color == Color.BLACK) {
@@ -258,7 +304,11 @@ public class Rules {
         return true;
     }
 
-    public boolean pieceCanMove(Field startField, Board board) {
+    public boolean pieceCanMove(Field startField, Board board)
+    /**
+     * checks if a piece on startField can move
+     */
+    {
         int x = startField.x;
         int y = startField.y;
 

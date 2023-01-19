@@ -6,6 +6,12 @@ import javafx.scene.paint.Color;
 
 import java.io.IOException;
 
+/**
+ * class Tile represents fields on the board.
+ * It can have pieces on it.
+ * It has information about recently clicked tiles.
+ * If there are two different tiles recently clicked, it uses ClientConnection to send a move.
+ */
 public class Tile extends Rectangle {
     public Piece piece;
     private Client client;
@@ -40,17 +46,17 @@ public class Tile extends Rectangle {
 
         this.setOnMouseClicked(e -> {
             e.consume();
-            if (firstChosenTile == null)
+            if (firstChosenTile == null) // no tiles clicked
             {
                 firstChosenTile = this;
                 this.setFill(Color.valueOf("f11c40"));
             }
-            else if (firstChosenTile == this)
+            else if (firstChosenTile == this) // clicking the same tile
             {
                 setFill((x+y)%2 == 1 ? Color.valueOf("FFFF99") : Color.valueOf("4C9900"));
                 firstChosenTile = null;
             }
-            else
+            else // clicking different tiles
             {
                 this.setFill(Color.valueOf("f11c40"));
 

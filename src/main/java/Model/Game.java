@@ -1,5 +1,9 @@
 package Model;
 
+/**
+ * Game class is responsible for making the game playable. It has methods to move pieces,
+ * check if the game is over and set starting position. It uses Rules class to check move possibility.
+ */
 public class Game {
 
     public Board board;
@@ -28,6 +32,12 @@ public class Game {
         move(board.Fields[x][y], board.Fields[x2][y2]);
     }
     public void move(Field startField, Field endField)
+    /**
+     * Move method is responsible for moving piece from startfield to endfield and
+     * delete enemy pieces if it was an attack. It uses Rules class to check if move is legit
+     * and then executes the move accordingly to move type. In the end it toggles parameter whiteTurn
+     * and changes checkers to kings if needed. It also checks if the game is over using Rules.
+     */
     {
         System.out.println("Moving: " + startField.x + " " + startField.y + " " + endField.x + " "
                 + endField.y);
@@ -94,6 +104,9 @@ public class Game {
     }
 
     public void startingPosition()
+    /**
+     * sets starting position
+     */
     {
         for(int i = board.sizeY - 3; i < board.sizeY; i++)
         {
