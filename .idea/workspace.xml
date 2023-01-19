@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/home/krystian/Desktop/TP/Warcaby",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -169,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="16457000" />
+      <workItem from="1674130891932" duration="17511000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -234,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674148404685</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding javadoc">
+      <created>1674149621513</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674149621513</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding javadoc2">
+      <created>1674149710598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674149710598</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +287,9 @@
     <MESSAGE value="Setting network" />
     <MESSAGE value="Network set. UI works. Game is entirely playable." />
     <MESSAGE value="Methods and classes are described." />
-    <option name="LAST_COMMIT_MESSAGE" value="Methods and classes are described." />
+    <MESSAGE value="Adding javadoc" />
+    <MESSAGE value="Adding javadoc2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding javadoc2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_KINGcanAttackinOneOfDiagonals.ic" NAME="RulesTest.KINGcanAttackinOneOfDiagonals Coverage Results" MODIFIED="1674138957920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
