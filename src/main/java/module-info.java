@@ -3,6 +3,6 @@ module com.example.warcaby {
     requires javafx.fxml;
 
 
-    opens com.example.warcaby to javafx.fxml;
-    exports com.example.warcaby;
+    opens Widok to javafx.fxml;
+    exports Widok;
 }

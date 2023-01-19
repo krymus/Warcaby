@@ -7,7 +7,7 @@ public class Board {
     int sizeY;
     boolean A1isWhite;
     public boolean whiteTurn;
-    public int gameIsOn; // 1 - game is on 2 - white win 3 - black win
+    public int gameIsOn; // 0 - game is on 1 - white win 2 - black win
 
 
     public Board(int sizeX, int sizeY, boolean A1isWhite)
@@ -17,7 +17,7 @@ public class Board {
         this.sizeY = sizeY;
         this.A1isWhite = A1isWhite;
         giveColorsToFields(A1isWhite);
-        gameIsOn = 1;
+        gameIsOn = 0;
     }
 
 
