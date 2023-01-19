@@ -53,7 +53,9 @@ public class ClientConnection  {
                     {
                         msg = in.readLine();
                         String[] coordinates = msg.split(" ");
-                        System.out.println(msg);
+                        client.setGameState(msg);
+
+                        if(!coordinates[65].equals("0")) break;
                     }
 
 

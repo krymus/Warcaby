@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/PieceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Widok/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/ClientConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Widok/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widok/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="11522000" />
+      <workItem from="1674130891932" duration="12135000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -212,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674142003181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Setting network">
+      <created>1674144484493</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674144484493</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +258,8 @@
     <MESSAGE value="84% of Rules class covered with Tests" />
     <MESSAGE value="Adding Game class" />
     <MESSAGE value="Checkers attacking fixed. Class Game covered with tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkers attacking fixed. Class Game covered with tests." />
+    <MESSAGE value="Setting network" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting network" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_KINGcanAttackinOneOfDiagonals.ic" NAME="RulesTest.KINGcanAttackinOneOfDiagonals Coverage Results" MODIFIED="1674138957920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

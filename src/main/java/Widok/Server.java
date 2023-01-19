@@ -38,6 +38,33 @@ public class Server {
         String move = "";
         System.out.println(game.gameState());
         broadcastGameState(game.gameState());
+
+        while(game.board.gameIsOn == 0)
+        {
+            if(game.board.whiteTurn) move = inW.readLine();
+            else move = inB.readLine();
+            String[] splitMove = move.split(" ");
+            int x = Integer.parseInt(splitMove[0]);
+            int y = Integer.parseInt(splitMove[1]);
+            int x2 = Integer.parseInt(splitMove[2]);
+            int y2 = Integer.parseInt(splitMove[3]);
+            System.out.println("Attack possible: " + game.rules.isAttackPossible(game.board));
+            System.out.println("WhiteTurn: " + game.board.whiteTurn);
+            if (game.isLegalInString(x, y, x2, y2))
+            {
+                game.moveInInts(x, y, x2, y2);
+                game.board.displayGameState();
+                broadcastGameState(game.gameState());
+            }
+            else System.out.println("Illegal move");
+
+
+            System.out.println("");
+        }
+
+        broadcastGameState(game.gameState());
+
+
     }
 
 
@@ -92,11 +119,11 @@ public class Server {
 
     public void broadcastGameState(String gameState) throws IOException
     {
-        outW.write(gameState);
+        outW.write(gameState + "1 ");
         outW.newLine();
         outW.flush();
 
-        outB.write(gameState);
+        outB.write(gameState + "2 ");
         outB.newLine();
         outB.flush();
     }
@@ -107,5 +134,17 @@ public class Server {
         ServerSocket serverSocket = new ServerSocket(1234);
         Server server = new Server(serverSocket);
         server.startTheGame();
+
+       /* while(true)
+        {
+            Scanner scanner = new Scanner(System.in);
+            String move = scanner.nextLine();
+            String[] splitMove = move.split(" ");
+            int x = Integer.parseInt(splitMove[0]);
+            int y = Integer.parseInt(splitMove[1]);
+            int x2 = Integer.parseInt(splitMove[2]);
+            int y2 = Integer.parseInt(splitMove[3]);
+        } */
+
     }
 }
