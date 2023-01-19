@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.warcaby","l":"Model"},{"m":"com.example.warcaby","l":"Widok"}];updateSearchResults();
