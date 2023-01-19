@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Model/RulesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Rules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="7362000" />
+      <workItem from="1674130891932" duration="8055000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -191,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674135879082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="84% of Rules class covered with Tests">
+      <created>1674139774739</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674139774739</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +231,8 @@
     <MESSAGE value="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods." />
     <MESSAGE value="Adding BoardTests" />
     <MESSAGE value="Adding Rules class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Rules class" />
+    <MESSAGE value="84% of Rules class covered with Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="84% of Rules class covered with Tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegalforCHECKER.ic" NAME="RulesTest.isLegalforCHECKER Coverage Results" MODIFIED="1674138767877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -243,6 +251,9 @@
       <FILTER>Model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegal.ic" NAME="RulesTest.isLegal Coverage Results" MODIFIED="1674138042758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$RulesTest_pieceCanMove.ic" NAME="RulesTest.pieceCanMove Coverage Results" MODIFIED="1674139539137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_CHECKERCanAtack.ic" NAME="RulesTest.CHECKERCanAtack Coverage Results" MODIFIED="1674136910005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
