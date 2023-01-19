@@ -9,7 +9,7 @@ public class Game {
     public Game()
     {
         this.rules = new Rules();
-        this.board = new Board(8,8,true);
+        this.board = new Board(8,8,false);
         this.board.gameIsOn = 0;
         startingPosition();
     }

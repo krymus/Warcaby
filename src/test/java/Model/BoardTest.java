@@ -8,10 +8,10 @@ class BoardTest {
     @Test
     public void BoardTest()
     {
-        Board board = new Board(8,8,true);
+        Board board = new Board(8,8,false);
         assertEquals(8, board.sizeX);
         assertEquals(8, board.sizeY);
-        assertEquals(Color.WHITE, board.Fields[0][0].color);
+        assertEquals(Color.BLACK, board.Fields[0][0].color);
         assertEquals(0, board.gameIsOn);
 
         assertEquals(true, board.validIndex(0, 0));

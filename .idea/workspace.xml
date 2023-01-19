@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9791a130-c93e-4abe-ab70-128a722a3855" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Model/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +71,8 @@
       <recent name="Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RulesTest.pieceCanMove">
-    <configuration name="RulesTest.KINGcanAttackinOneOfDiagonals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameTest">
+    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Warcaby" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +81,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.RulesTest" />
-      <option name="METHOD_NAME" value="KINGcanAttackinOneOfDiagonals" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Warcaby" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.gameState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Warcaby" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.GameTest" />
+      <option name="METHOD_NAME" value="gameState" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesTest.didBlackLost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.moveInInts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Warcaby" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +127,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.RulesTest" />
-      <option name="METHOD_NAME" value="didBlackLost" />
+      <option name="MAIN_CLASS_NAME" value="Model.GameTest" />
+      <option name="METHOD_NAME" value="moveInInts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesTest.didWhiteLost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RulesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Warcaby" />
       <extension name="coverage">
         <pattern>
@@ -112,51 +144,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="Model" />
       <option name="MAIN_CLASS_NAME" value="Model.RulesTest" />
-      <option name="METHOD_NAME" value="didWhiteLost" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RulesTest.getFieldOfEnemyPieceOnPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Warcaby" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.RulesTest" />
-      <option name="METHOD_NAME" value="getFieldOfEnemyPieceOnPath" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RulesTest.pieceCanMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Warcaby" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.RulesTest" />
-      <option name="METHOD_NAME" value="pieceCanMove" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RulesTest.pieceCanMove" />
-        <item itemvalue="JUnit.RulesTest.getFieldOfEnemyPieceOnPath" />
-        <item itemvalue="JUnit.RulesTest.didBlackLost" />
-        <item itemvalue="JUnit.RulesTest.didWhiteLost" />
-        <item itemvalue="JUnit.RulesTest.KINGcanAttackinOneOfDiagonals" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.moveInInts" />
+        <item itemvalue="JUnit.RulesTest" />
+        <item itemvalue="JUnit.BoardTest" />
+        <item itemvalue="JUnit.GameTest.gameState" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674130890678</updated>
-      <workItem from="1674130891932" duration="8055000" />
+      <workItem from="1674130891932" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="Adding classes: Board, Field, Piece, enum Color, enum PieceType. Board has Fields, Field has Piece and Piece has Color and PieceType. Board has also  display methods.">
       <created>1674134184936</created>
@@ -198,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674139774739</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding Game class">
+      <created>1674140220086</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674140220086</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +238,8 @@
     <MESSAGE value="Adding BoardTests" />
     <MESSAGE value="Adding Rules class" />
     <MESSAGE value="84% of Rules class covered with Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="84% of Rules class covered with Tests" />
+    <MESSAGE value="Adding Game class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Game class" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_isLegalforCHECKER.ic" NAME="RulesTest.isLegalforCHECKER Coverage Results" MODIFIED="1674138767877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -256,6 +263,9 @@
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_pieceCanMove.ic" NAME="RulesTest.pieceCanMove Coverage Results" MODIFIED="1674139539137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$GameTest_gameState.ic" NAME="GameTest.gameState Coverage Results" MODIFIED="1674140557718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_CHECKERCanAtack.ic" NAME="RulesTest.CHECKERCanAtack Coverage Results" MODIFIED="1674136910005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
@@ -263,6 +273,9 @@
       <FILTER>Model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Warcaby$RulesTest_didWhiteLost.ic" NAME="RulesTest.didWhiteLost Coverage Results" MODIFIED="1674139211901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Warcaby$GameTest_moveInInts.ic" NAME="GameTest.moveInInts Coverage Results" MODIFIED="1674140657739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Model.*</FILTER>
     </SUITE>
   </component>
